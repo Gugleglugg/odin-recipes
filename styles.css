@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    max-width: 1100px;    
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-content: stretch;
+    gap: 10px;
+}
+
+h1, img {
+    margin: auto;
+    padding: 10px;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: cursive, sans-serif;
+   
+}
+
+.description {
+    border: 10px solid goldenrod;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.steps {
+    border: 10px solid darkgreen;
+    border-radius: 30px;
+    padding: 10px;
+    flex-basis: 70%;
+    flex-grow: 2;
+    margin-bottom: 10px;
+    
+}
+
+.ingredients{
+    border: 10px solid darkred;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    flex-basis: 20%;
+    flex-grow: 2;
+    
+}
