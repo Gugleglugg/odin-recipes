@@ -5,6 +5,28 @@
 
 /*css for the main page */
 
+::selection {
+    background-color: darkred;
+}
+
+.welcome::before {
+    content: "henlo";
+    display: block;
+    background-color: red;
+    text-align: center;
+    margin: auto;
+   
+}
+
+.welcome::after {
+    content: "";
+    display: block;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+}
+
 .header {
     display: flex;
     max-width: 1100px;
@@ -16,7 +38,8 @@
 .socialbuttons {
     display: flex;
     align-items: center;
-    border: 3px solid black;
+    gap: 2rem;
+    padding-right: 1rem;
 }
 
 .page {
@@ -37,6 +60,39 @@
 
 }
 
+body {
+    font-family: sans-serif;
+    font-size: larger;
+}
+
+a:link {
+    color: darkgoldenrod;
+}
+
+a:visited {
+    color: darkslategray;    
+}
+
+a:hover {
+    color:darkorange;
+}
+
+a:active {
+    color: darkgreen;
+}
+
+.main > p {
+    color:blueviolet;
+}
+
+.equal-columns {
+    display: flex;
+}
+
+.equal-columns > * {
+    flex: 1;
+}
+
 .navbar {
     flex-basis: 1;
     max-width: 500px;
@@ -52,6 +108,43 @@
     max-width: 1100px;
     justify-content: center;
 }
+
+.focus:focus{
+    color: brown;
+    border: 1px solid;
+}
+
+.focus-within:focus-within {
+    font-weight: bold;
+    background-color: aqua; 
+}
+
+.focus-visible:focus-visible {
+    color: rgb(0, 255, 76);
+}
+
+.sub > ul > li::marker {
+    content: "🔥";
+    font-size: 1.2em;
+}
+
+.sub > ul > li:first-child {
+    background-color: bisque;
+}
+
+.sub > ul > li:nth-child(3) {
+    background-color: red;
+}
+
+.sub > ul > li:nth-child(2n) {
+    background-color: lightgoldenrodyellow;
+}
+
+.column > p::first-letter {
+    font-size: x-large;
+}
+
+
 
 /* css for the recipe page */
 
